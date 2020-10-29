@@ -1,0 +1,1 @@
+# Esse é um protótipo do código do jogo Jokenpô. Embora simples, ele é funcional.
