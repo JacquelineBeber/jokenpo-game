@@ -1,12 +1,12 @@
-from pessoa import Pessoa
 
-class Jogador(Pessoa):
-    def __init__(self, nome: str, jogada: str):
+class Jogador:
+    def __init__(self, nome: str, pontos: int):
         if isinstance(nome, str):
             self.__nome = nome
-        if isinstance(jogada, str):
-            self.__jogada = jogada
+        if isinstance(pontos, str):
+            self.__pontos = pontos
 
+    pontos = 0
     contador = 0
 
     def jogarPedra(self):
