@@ -1,0 +1,5 @@
+
+class Pessoa:
+    def __init__(self, nome: str):
+        if isinstance (nome, str):
+            self.__nome = nome
