@@ -6,35 +6,34 @@ class Jogador:
         if isinstance(pontos, str):
             self.__pontos = pontos
 
-    pontos = 0
     contador = 0
 
     def jogarPedra(self):
         if self.__jogada == 'PEDRA':
-            if self.__computador == 'PEDRA':
+            if self._computador == 'PEDRA':
                 contador += 0
-            elif self.__computador == 'PAPEL':
+            elif self._computador == 'PAPEL':
                 contador -= 1
-            elif self.__computador == 'TESOURA':
+            elif self._computador == 'TESOURA':
                 contador += 1
         return contador
 
     def jogarPapel(self):
         if self.__jogada == 'PAPEL':
-            if self.__computador == 'PEDRA':
+            if self._computador == 'PEDRA':
                 contador += 1
-            elif self.__computador == 'PAPEL':
+            elif self._computador == 'PAPEL':
                 contador += 0
-            elif self.__computador == 'TESOURA':
+            elif self._computador == 'TESOURA':
                 contador -= 1
         return contador
 
     def jogarTesoura(self):
-        if self.__jogada == 'TESOURA':
-            if self.__computador == 'PEDRA':
+        if self._jogada == 'TESOURA':
+            if self._computador == 'PEDRA':
                 contador -= 1
-            elif self.__computador == 'PAPEL':
+            elif self._computador == 'PAPEL':
                 contador += 1
-            elif self.__computador == 'TESOURA':
+            elif self._computador == 'TESOURA':
                 contador += 0
         return contador
